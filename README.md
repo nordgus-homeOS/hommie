@@ -1,24 +1,27 @@
-# README
+# Hoomie
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hoomie is an PoC for what I called homeOS, a simple suite of home administration tools from cooking to inventory.
 
-Things you may want to cover:
+## Setup Environment
 
-* Ruby version
+This repository is setup to use vscode's Remote Containers. So install the extention on your vscode installation.
 
-* System dependencies
+To setup application's environment run in a terminal tab:
+```shell
+bin/setup
+```
 
-* Configuration
+To run develoment server run in a new terminal tab:
+```shell
+rails s -b 0.0.0.0
+```
 
-* Database creation
+To run webpack builds run in a new terminal tab:
+```shell
+yarn build --watch
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run sass builds run in a new terminal tab:
+```shell
+yarn build:css --watch
+```
